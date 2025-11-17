@@ -1,0 +1,138 @@
+body {
+  background-color: #f0f0f0;
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fullwrap {
+  width: 95%;
+  margin: 15px auto;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border: 2px solid #ccc; 
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header {
+  border-bottom: 2px solid #c9879d;
+  background-color: #f49dce;
+  color: white;
+  min-height: 100px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.15);
+}
+  
+.wrap {
+  border: 2px solid #ddd;
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+  
+main {
+  flex: 3;
+  min-width: 600px;
+  min-height: 450px;
+  border: 2px solid #ddd;
+  background-color: #f9e6ec;
+  padding: 15px;
+  border-radius: 10px; 
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+}
+  
+.sidebar {
+  min-width: 100px;
+  min-height: 450px;
+  flex: 1;
+  border: 2px solid #ddd;
+  padding: 15px;
+  background-color: #ba4a6f;
+  color: white;
+  border-radius: 10px; 
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+  
+footer {
+  min-height: 80px;
+  text-align: center;
+  padding: 15px;
+  background-color: #f49dce;
+  color: white;
+  border-top: 2px solid #c9879d;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* стилі для лого Instagram */
+header img {
+  width: 95px; 
+}
+
+/* стилі для заголовку */
+header h1 {
+  margin-left: 20px; 
+  font-size: 30px; 
+}
+
+/* стилі для фото ліворуч */
+.image-left img {
+  width: 450px;
+  border-radius: 10px;
+  height: auto;
+    border-radius: 8px; 
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  float: left;
+}
+
+/*контейнер для фото та текстуу */
+.image-text-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 20px;  
+}
+
+/* стилі для тексту */
+.text p {
+  font-size: 16px;
+  color: #333;
+  text-align: justify;
+  margin-bottom: 20px;
+  margin: 0;  
+}
+
+.sidebar a:hover {
+  color: #9a81fc; /* колір при наведенні */
+}
+
+.sidebar a {
+  color: rgb(253, 241, 241); 
+  display: block;
+  margin-bottom: 10px;
+  font-size: 16px;
+  transition: color 0.3s ease;
+  font-size: 40px; 
+  font-style: italic;
+  font-weight: bold; 
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 768px) {
+  .content {
+    grid-template-columns: 1fr;
+  }
+}
+
